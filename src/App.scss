@@ -1,0 +1,161 @@
+$lightblue: #CFF5E7;
+$blue: #0D4C92;
+$darkblue: #1C3144;
+$black: #0A0A0A;
+
+//reset
+*, *::before, *::after {
+     box-sizing: border-box;
+}
+
+html, body, #root {
+     height: 100%;
+   }
+
+* {
+     margin: 0;
+  }
+
+  li {
+     list-style:none;
+ }
+ 
+ a {
+     text-decoration:none;
+     color:$lightblue;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     font-weight:400;
+ }
+
+body {
+     background-color: $lightblue;
+     font-family: 'Plus Jakarta Sans', serif;
+}
+
+//utility classes
+.container {
+    padding:1.5rem 3rem;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.lightColor {
+     color: $lightblue !important;
+}
+
+.lightBgColor {
+     background-color: $lightblue;
+}
+
+.darkColor {
+     color: $darkblue;
+}
+
+.blueColor {
+     color:$blue;
+}
+
+.blueBgColor {
+     background-color: $blue;
+}
+
+.darkBgColor {
+     background-color: $darkblue;
+}
+
+//buttonStyles
+.defaultBtn {
+     background: transparent;
+     border-radius: 50px;
+     font-size:25px;
+     color:$black;
+     border: 3px solid $blue;
+     padding: 0.6rem 5rem;
+     font-family: 'Plus Jakarta Sans', serif;
+     transition: opacity 0.2s ease-in-out;
+}
+
+.defaultBtn:hover {
+     cursor:pointer;
+     opacity:0.75;
+}
+
+
+.lightBtBorder {
+     border-bottom: 1px solid $lightblue;
+}
+
+//padding and margin
+
+.m1 {
+     margin:1rem;
+}
+
+.m2 {
+     margin:2rem;
+}
+
+.m3 {
+     margin:3rem;
+}
+
+.m4 {
+     margin:4rem;
+}
+
+.m1y {
+     margin:1rem 0;
+}
+
+.m2y {
+     margin:2rem 0;
+}
+
+.m3y {
+     margin:3rem 0;
+}
+
+.m4y {
+     margin:4rem 0;
+}
+
+.m1t {
+     margin-top:1rem;
+}
+
+.m2t {
+     margin-top:2rem;
+}
+
+.m3t {
+     margin-top:3rem;
+}
+
+.m4t {
+     margin-top:4rem;
+}
+
+.m5t {
+     margin-top:5rem;
+}
+
+
+.m1b {
+     margin-bottom:1rem;
+}
+.m2b {
+     margin-bottom:2rem;
+}
+.m3b {
+     margin-bottom:3rem;
+}
+.m4b {
+     margin-bottom:4rem;
+}
+.m5b {
+     margin-bottom:5rem;
+}
+
+.separator {
+     border-bottom:1px solid $lightblue;
+}

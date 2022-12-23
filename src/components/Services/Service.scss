@@ -1,0 +1,66 @@
+svg {
+     width:60px;
+     height: 60px;
+}
+
+svg:hover {
+     cursor: pointer;
+}
+
+.arrow-btn {
+     padding:0;
+     background: transparent;
+     border:none;
+     transition: transform 0.4s ease;
+}
+
+.service-heading {
+     display:flex;
+     color:#fff;
+
+     .service-id, .service-title {
+          font-size:3rem;
+     }
+     .service-id {
+          transform:translateY(-20%);
+          padding:10px;
+          font-weight: bold;
+     }
+}
+
+.service-img {
+     transition: opacity 0.3s ease;
+}
+
+.service-img img {
+     width:100%;
+     border-radius: 80px;
+}
+
+.service { 
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     padding:3rem 0;
+     transition: all 0.75s ease-in-out;
+     }
+
+.service-row {
+     height:100%;
+     display:flex;
+     justify-content: space-between;
+     align-items:center;
+}
+
+.show-btn {
+     opacity:1;
+}
+
+.hide-btn {
+     opacity:0;
+}
+
+.rotate-btn {
+     transform:rotateZ(-45deg);
+}
+

@@ -1,0 +1,29 @@
+.services {
+     position: relative;
+     width:100%;
+     transform:translateY(-80px);
+     z-index:1 !important;
+     padding-top:18%;
+}
+
+.services-heading {
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.services-title {
+     color:#fff;
+     font-size:6rem;
+}
+
+.text-left {
+     font-size:25px;
+     color:#fff;
+     width:350px;
+     text-align:right;
+}
+
+.services-list .service:last-child {
+     border-bottom: none;
+}
