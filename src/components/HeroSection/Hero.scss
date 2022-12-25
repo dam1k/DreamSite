@@ -10,6 +10,7 @@
      width: 80%;
 }
 
+
 .hero-middle {
      width:100%;
      display:flex;
@@ -36,11 +37,12 @@ transform: translateY(25%);
 
 .hero-image img {
      width:100%;
-     border-radius:80px;
+     border-radius:60px;
+     opacity:0.6;
 }
 
 .hero {
      position: relative;
-     border-radius:80px;
+     border-radius:60px;
      z-index:99 !important;
 }
