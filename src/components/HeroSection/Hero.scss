@@ -46,3 +46,13 @@ transform: translateY(25%);
      border-radius:60px;
      z-index:99 !important;
 }
+
+@keyframes heroHeading {
+     from {transform:translateY(-20px); opacity:0;}
+     to {from {transform:translateY(0); opacity:1;}}
+}
+
+.hero-title {
+animation-name:heroHeading;
+animation-duration:0.75s;
+}

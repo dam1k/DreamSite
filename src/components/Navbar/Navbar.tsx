@@ -15,7 +15,7 @@ const Navbar = () => {
       <Logo/>
       <div className="links">
         <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/reviews">Reviews</NavLink>
+        <NavLink to="/contact">Contact Us</NavLink>
       </div>
     </div>
     </div>

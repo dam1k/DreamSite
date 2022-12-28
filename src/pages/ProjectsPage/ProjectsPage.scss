@@ -1,17 +1,21 @@
-
-.projects-title {
-     position:relative;
-     z-index:2;
-     font-size:6rem;
-     text-align: center;
-     padding-bottom:6rem;
+.projects-page {
      border-radius:60px;
+     position:relative;
+     z-index:3;
+}
+
+.projects-page + .footer {
+     transform:translateY(-60px);
+     position:relative;
+     z-index:-1;
 }
 
 .projects-list {
-transform:translateY(-80px);
+transform:translateY(-60px);
 padding-top:10rem;
 height:100%;
+border-bottom-left-radius: 60px;
+     border-bottom-right-radius: 60px;
 }
 
 .projects-list-grid {
@@ -68,3 +72,6 @@ height:100%;
      }
 }
 
+.projects-page + .footer {
+     transform: translateY(-120px);
+}

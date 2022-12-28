@@ -28,3 +28,21 @@ export const projects = [
           image: project2
      }
 ]
+
+export const services = [
+     {
+       text: "UI/UX Design",
+       id: 1,
+       description: 'Lorem ipsum dolor sit amet consectetur adipiscing, elit facilisi aptent varius pulvinar luctus, et pellentesque vitae sapien libero. Proin vel ac porta leo montes iaculis metus eleifend aliquet erat, nullam hendrerit tristique habitasse nec ad fringilla turpis cubilia.'
+     },
+     {
+       text: "Development",
+       id: 2,
+       description: 'Lorem ipsum dolor sit amet consectetur adipiscing, elit facilisi aptent varius pulvinar luctus, et pellentesque vitae sapien libero. Proin vel ac porta leo montes iaculis metus eleifend aliquet erat, nullam hendrerit tristique habitasse nec ad fringilla turpis cubilia.'
+     },
+     {
+       text: "Graphic Design",
+       id: 3,
+       description: 'Lorem ipsum dolor sit amet consectetur adipiscing, elit facilisi aptent varius pulvinar luctus, et pellentesque vitae sapien libero. Proin vel ac porta leo montes iaculis metus eleifend aliquet erat, nullam hendrerit tristique habitasse nec ad fringilla turpis cubilia.'
+     }
+     ]

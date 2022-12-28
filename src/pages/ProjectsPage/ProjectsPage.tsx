@@ -3,10 +3,10 @@ import { projects } from "../../data/projects";
 import Contact from "../../components/Contact/Contact";
 
 const ProjectsPage = () => {
-  const pageTitle = 'Check out our projects!';
+  const pageTitle = 'These are our projects.';
   return (
-    <div className="projects-page lightBgColor">
-     <h1 className="projects-title darkColor lightBgColor m2t">{pageTitle}</h1>
+    <div className="projects-page">
+     <h1 className="page-title darkColor lightBgColor m2t">{pageTitle}</h1>
      <div className="projects-list darkBgColor">
       <div className="container">
         <div className="projects-list-grid">
@@ -19,7 +19,7 @@ const ProjectsPage = () => {
           })}
         </div>
       </div>
-      <Contact/>
+      <Contact showImg={true}/>
      </div>
      </div>
   )

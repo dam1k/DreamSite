@@ -1,25 +1,10 @@
 import "./Services.scss";
 import Service from "./Service";
-
-const data = [
-{
-  text: "UI/UX Design",
-  id: 1
-},
-{
-  text: "Development",
-  id: 2
-},
-{
-  text: "Graphic Design",
-  id: 3
-}
-]
-
+import { services } from "../../data/projects";
 
 const Services = () => {
   return (
-    <div className="services darkBgColor">
+    <div className="services darkBgColor" id="services">
       <div className="container">
         <div className="services-flex">
           <div className="services-heading">
@@ -28,7 +13,7 @@ const Services = () => {
           </div>
 
           <div className="services-list">
-            {data.map(service => <Service key={service.id} service={service}/>)}
+            {services.map(service => <Service dropdown={true} key={service.id} service={service}/>)}
           </div>
         </div>
       </div>

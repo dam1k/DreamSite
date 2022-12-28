@@ -42,7 +42,7 @@ svg:hover {
      flex-direction: column;
      justify-content: center;
      padding:3rem 0;
-     transition: all 0.75s ease-in-out;
+     transition: all 1s ease-in-out;
      }
 
 .service-row {
@@ -50,6 +50,11 @@ svg:hover {
      display:flex;
      justify-content: space-between;
      align-items:center;
+}
+
+.service-desc {
+font-size:20px;
+padding-top:3rem;
 }
 
 .show-btn {
@@ -64,3 +69,10 @@ svg:hover {
      transform:rotateZ(-45deg);
 }
 
+.service-visible {
+opacity:1;
+}
+
+.hidden {
+     opacity:0;
+     }

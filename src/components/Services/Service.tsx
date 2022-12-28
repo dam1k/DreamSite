@@ -5,22 +5,26 @@ import Icons from "../../icons/icons";
 import "./Service.scss";
 import services from "../../assets/services.jpg";
 
-const Service = ({service}:any) => {
+const Service = ({service, dropdown}:any) => {
   const serviceRef = useRef<HTMLInputElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState<Boolean>();
+  const [isVisible, setIsVisible] = useState<Boolean>(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
       if(entry.isIntersecting) {
         setIsVisible(true);
-      }
-      // setIsVisible(entry.isIntersecting);
+      } 
   })
-
   observer.observe(serviceRef.current!);
-  }, [])
+  }, []);
+
+useEffect(() => {
+if(!dropdown) {
+  setIsOpen(true);
+}
+}, [])
 
   return (
     <div ref={serviceRef} className={`service lightBtBorder 
@@ -31,10 +35,10 @@ const Service = ({service}:any) => {
      <h1 className="service-title">{service.text}</h1>
      </div>
 
-     <button className={`arrow-btn ${isOpen ? "rotate-btn" : ''}`}
+     {dropdown ? <button className={`arrow-btn ${isOpen ? "rotate-btn" : ''}`}
       onClick={() => setIsOpen(prev => !prev)}>
         <BsArrowRightCircle color="#CFF5E7"/>
-        </button>
+        </button> : ''}
         </div>
 
         <AnimatePresence>
@@ -47,6 +51,7 @@ const Service = ({service}:any) => {
           <img src={services}/> 
         </motion.div>}
         </AnimatePresence>
+        {!dropdown && <p className="service-desc lightColor">{service.description}</p>}
      </div>
   )
 }

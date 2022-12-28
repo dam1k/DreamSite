@@ -2,10 +2,10 @@
 import "./Contact.scss";
 import pastelBackground from "../../assets/heroImage.jpg";
 
-const Contact = () => {
+const Contact = ({showImg}:any) => {
   return (
     <div className="contact lightBgColor">
-     <img src={pastelBackground}/>
+     {showImg && <img src={pastelBackground}/>}
      <div className="container">
           <div className="contact-flex">
                <div className="blue-separator"/>
