@@ -39,7 +39,6 @@ const About = () => {
         </div>
         </NavLink>
          
-         
         <div className="social">
           <div className='icon'>
             <MdEmail/>

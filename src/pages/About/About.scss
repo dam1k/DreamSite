@@ -7,6 +7,10 @@
      padding-bottom:3rem;
 }
 
+.page-title.about-title {
+     padding-left:0 !important;
+}
+
 .about-text {
      font-size:3rem;
      padding-bottom:3rem;
@@ -42,4 +46,60 @@ padding:4rem 0;
      text-align:center;
      padding:4rem 0;
      font-size:1.5rem;
+}
+
+@media only screen and (max-width:1050px) {
+     .about-title {
+          font-size:4rem !important;
+     }
+
+     .about-text {
+          font-size:2rem;
+     }
+}
+
+@media only screen and (max-width:750px) {
+     .about-social {
+          padding:1.5rem 0 !important;
+     }
+   
+     .about-title {
+          font-size:3rem !important;
+     }
+
+     .about-text {
+          font-size:1.5rem;
+     }
+
+     .about-flex {
+          flex-direction:column;
+
+           a {
+               margin:2.5rem 0;
+           }
+     }
+}
+
+@media only screen and (max-width:600px) {
+     .about-title {
+          font-size:2.5rem !important;
+     }
+
+     .about-text {
+          font-size:1.25rem;
+     } 
+
+     .about-flex {
+          flex-direction:column;
+     }
+}
+
+@media only screen and (max-width:460px) {
+     .about-title {
+          font-size:2rem !important;
+     }
+
+     .about-text {
+          font-size:1rem;
+     } 
 }

@@ -27,3 +27,46 @@
 .services-list .service:last-child {
      border-bottom: none;
 }
+
+@media only screen and (max-width: 1000px) {
+     .services-title {
+          font-size:5rem;
+     }     
+     .text-left {
+          font-size:20px;
+          color:#fff;
+          width:200px;
+          text-align:right;
+     }
+}
+
+@media only screen and (max-width: 750px) {
+     .services-title {
+          font-size:4rem;
+     }     
+     .text-left {
+          font-size:18px;
+          color:#fff;
+          width:180px;
+          text-align:right;
+     }
+ }
+
+ @media only screen and (max-width: 650px) {
+     .services-heading {
+          flex-direction: column;
+     }
+     .services-title {
+          padding-bottom:1.5rem;
+     }
+     .text-left {
+          width:100%;
+          text-align: center;
+     }
+ }
+
+ @media only screen and (max-width: 450px) {
+     .services-title {
+          font-size:2.5rem;
+     }
+ }

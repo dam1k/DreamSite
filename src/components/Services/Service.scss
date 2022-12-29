@@ -17,6 +17,7 @@ svg:hover {
 .service-heading {
      display:flex;
      color:#fff;
+     font-size:3rem;
 
      .service-id, .service-title {
           font-size:3rem;
@@ -34,7 +35,7 @@ svg:hover {
 
 .service-img img {
      width:100%;
-     border-radius: 80px;
+     border-radius: 60px;
 }
 
 .service { 
@@ -76,3 +77,21 @@ opacity:1;
 .hidden {
      opacity:0;
      }
+
+ @media only screen and (max-width: 650px) {
+     .service-id, .service-title {
+          font-size:2rem !important;
+     }
+     .service-img img {
+          border-radius: 40px !important;
+     }
+ }
+
+ @media only screen and (max-width: 450px) {
+     .service-id, .service-title {
+          font-size:1.5rem !important;
+     }
+     .service .service-desc {
+          font-size:16px !important;
+     }
+ }
