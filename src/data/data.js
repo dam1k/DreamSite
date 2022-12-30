@@ -58,3 +58,17 @@ export const services = [
        image: contentWriting
      }
      ]
+
+export const socialData = {
+          email: {
+            name:'dream.site.md1@gmail.com',
+            link: ''
+          },
+          facebook: {
+            name:'DreamSite',
+            link: 'https://www.facebook.com/profile.php?id=100088812571928'
+          },
+          instagram: {
+            name:'@dream.site.md1',
+            link: 'https://www.instagram.com/dream.site.md1/'}
+        }

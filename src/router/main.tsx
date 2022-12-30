@@ -7,6 +7,7 @@ import ProjectsPage from "../pages/ProjectsPage/ProjectsPage";
 import About from "../pages/About/About";
 import ServicesPage from "../pages/Services/ServicesPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
+import NotFound from "../pages/NotFound/NotFound";
 
 const Router = () => {
      const {pathname} = useLocation();
@@ -19,6 +20,7 @@ const Router = () => {
                <Route path="/about" element={<About/>}/>
                <Route path="/services" element={<ServicesPage/>}/>
                <Route path="/contact" element={<ContactPage/>}/>
+               <Route path="*" element={<NotFound/>}/>
           </Routes>
           {pathname !== '/about' && <Footer/>}
           </>
