@@ -3,9 +3,9 @@ import project2 from "../assets/projects/project2.jpg";
 import project3 from "../assets/projects/project3.jpg";
 import project4 from "../assets/projects/project4.jpg";
 
-import development from "../assets/services/development.jpg";
-import webDesign from "../assets/services/webDesign.jpg";
-import contentWriting from "../assets/services/contentWriting.jpg";
+import development from "../assets/services/development.jpeg";
+import webDesign from "../assets/services/webDesign.jpeg";
+import contentWriting from "../assets/services/contentWriting.jpeg";
 
 export const projects = [
      {
