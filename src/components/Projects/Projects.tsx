@@ -17,7 +17,7 @@ const Projects = () => {
          
          {projects.slice(0, 3).map(project => {
           return <div key={project.id} className={`project-img img${project.id}`}>
-              <a href={project.url}><img src={project.image}/></a>
+              <a href={project.url}  target="_blank"><img src={project.image}/></a>
             </div> 
          })}
 
