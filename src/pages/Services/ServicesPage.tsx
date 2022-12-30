@@ -1,7 +1,7 @@
 import Services from "../../components/Services/Services";
 import Service from "../../components/Services/Service";
 import "./ServicesPage.scss";
-import { services } from "../../data/projects";
+import { services } from "../../data/data";
 import Contact from "../../components/Contact/Contact";
 
 const ServicesPage = () => {
@@ -19,7 +19,7 @@ const ServicesPage = () => {
           </div>
 
           <div className="services-list">
-            {services.map(service => <Service dropdown={false} key={service.id} service={service}/>)}
+            {services.map(service => <Service dropdown={false} key={service.id} service={service} navigate={false}/>)}
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import "./ProjectsPage.scss";
-import { projects } from "../../data/projects";
+import { projects } from "../../data/data";
 import Contact from "../../components/Contact/Contact";
 
 const ProjectsPage = () => {
@@ -11,11 +11,13 @@ const ProjectsPage = () => {
       <div className="container">
         <div className="projects-list-grid">
           {projects.map((project) => {
-            return (<div className="project-grid-item">
+            return (
+            <a href={project.url}><div key={project.id} className="project-grid-item">
              <div className="project-img"><img src={project.image}/></div>
             <h1 className="lightColor">{project.title}</h1>
             <p className="lightColor">{project.description}</p>
-          </div>)
+          </div>
+          </a>)
           })}
         </div>
       </div>

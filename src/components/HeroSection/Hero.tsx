@@ -1,5 +1,6 @@
 import Button from "../Button/Button";
 import heroImage from "../../assets/heroImage.jpg";
+import { Link } from "react-router-dom";
 
 import "./Hero.scss";
 
@@ -20,7 +21,7 @@ const Hero = () => {
      <div className="hero-middle m3t">
           <p className="hero-left-text">{sideText[0]}</p>
           <div className="hero-button">
-          <Button text={buttonText}/>
+          <Link to="/contact"><Button text={buttonText}/></Link>
           </div>
           <p className="hero-right-text">{sideText[1]}</p>
      </div>

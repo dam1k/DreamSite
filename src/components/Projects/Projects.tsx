@@ -1,8 +1,10 @@
-import project1 from "../../assets/project1.jpg"
-import project2 from "../../assets/project2.jpg"
-import project3 from "../../assets/project3.jpg"
 
+// import { projects } from '../../data/data';
+import { Link } from 'react-router-dom';
+import {useState} from "react";
 import './Projects.scss';
+
+import { projects } from '../../data/data';
 
 const Projects = () => {
   return (
@@ -10,11 +12,15 @@ const Projects = () => {
     <div className="container">
     <div className="projects-flex">
       <h1 className="darkColor m3b">Projects</h1>
-      <p className="m4b">We really make the best websites. If you don’t believe us, let the projects speak for themselves.</p>
+      <p className="m4b">We really make the best websites. If you don't believe us, let the projects speak for themselves.</p>
       <div className="projects-grid">
-        <div className="project-img img1"><img src={project1}/></div>
-        <div className="project-img img2"><img src={project2}/></div>
-        <div className="project-img img3"><img src={project3}/></div>
+         
+         {projects.slice(0, 3).map(project => {
+          return <div key={project.id} className={`project-img img${project.id}`}>
+              <a href={project.url}><img src={project.image}/></a>
+            </div> 
+         })}
+
       </div>
     </div>
     </div>

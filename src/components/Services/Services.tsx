@@ -1,6 +1,6 @@
 import "./Services.scss";
 import Service from "./Service";
-import { services } from "../../data/projects";
+import { services } from "../../data/data";
 
 const Services = () => {
   return (
@@ -13,7 +13,7 @@ const Services = () => {
           </div>
 
           <div className="services-list">
-            {services.map(service => <Service dropdown={true} key={service.id} service={service}/>)}
+            {services.map(service => <Service dropdown={true} key={service.id} service={service} navigate={true}/>)}
           </div>
         </div>
       </div>
