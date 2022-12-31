@@ -16,6 +16,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.5.0",
     "uid": "^2.0.1",
+    "vercel": "^28.10.1",
     "vite": "^4.0.3"
   },
   "devDependencies": {
