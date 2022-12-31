@@ -16,7 +16,7 @@ const Contact = ({showImg}:any) => {
                     <input className="email lightColor" type="email" name="email" required placeholder="Email"/>
                     <input type="text lightColor" className="phone" name="phone" required placeholder="Phone"/>
                     <button className="defaultBtn m2t" type="submit">Send</button>
-                    <input type="hidden" name="_next" value={window.location.href}/>
+                    <input type="hidden" name="_next" value="https://dreamsite.md"/>
                     <input type="hidden" name="_subject" value="Mesaj nou!"/>
                     <input type="hidden" name="_captcha" value="false"/>
                </form>
