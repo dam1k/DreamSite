@@ -70,5 +70,5 @@ export const socialData = {
           },
           instagram: {
             name:'@dream.site.md1',
-            link: 'https://www.instagram.com/dream.site.md1/'}
+            link: 'https://www.instagram.com/dreamsite.md/'}
         }
