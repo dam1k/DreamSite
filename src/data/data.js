@@ -69,6 +69,6 @@ export const socialData = {
             link: 'https://www.facebook.com/profile.php?id=100088812571928'
           },
           instagram: {
-            name:'@dream.site.md1',
+            name:'@dreamsite.md',
             link: 'https://www.instagram.com/dreamsite.md/'}
         }
