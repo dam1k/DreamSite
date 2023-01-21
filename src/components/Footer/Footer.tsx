@@ -19,7 +19,7 @@ const Footer = () => {
                     <h1>{footerText.firstP}</h1>
                     <h1>{footerText.secondP}</h1>
                     </div>
-                    <span className="icon"><img src={MessageIcon}/></span>
+                    <span className="icon"><img src={MessageIcon} alt=''/></span>
                </div>
                <div className="separator"/>
                <div className="footer-navbar m3t">

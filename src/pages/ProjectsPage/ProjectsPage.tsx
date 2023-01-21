@@ -13,7 +13,7 @@ const ProjectsPage = () => {
           {projects.map((project) => {
             return (
             <a href={project.url} target="_blank"><div key={project.id} className="project-grid-item">
-             <div className="project-img"><img src={project.image}/></div>
+             <div className="project-img"><img src={project.image} alt={project.title}/></div>
             <h1 className="lightColor">{project.title}</h1>
             <p className="lightColor">{project.description}</p>
           </div>

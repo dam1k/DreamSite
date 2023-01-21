@@ -53,7 +53,7 @@ if(!dropdown) {
           <img onClick={() => {
             if(navigate) navigateTo("/services")
            }} 
-           src={service.image} loading="lazy"/> 
+           src={service.image} loading="lazy" alt={`service-${service.text}`}/> 
         </motion.div>}
         </AnimatePresence>
         {!dropdown && <p className="service-desc lightColor">{service.description}</p>}
