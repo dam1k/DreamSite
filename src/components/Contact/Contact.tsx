@@ -5,7 +5,7 @@ import pastelBackground from "../../assets/heroImage.jpg";
 const Contact = ({showImg}:any) => {
   return (
     <div className="contact lightBgColor">
-     {showImg && <img src={pastelBackground}/>}
+     {showImg && <img src={pastelBackground} alt=''/>}
      <div className="container">
           <div className="contact-flex">
                <div className="blue-separator"/>
