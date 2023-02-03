@@ -1,7 +1,8 @@
-import project1 from "../assets/projects/project1.jpg";
-import project2 from "../assets/projects/project2.jpg";
-import project3 from "../assets/projects/project3.jpg";
-import project4 from "../assets/projects/project4.jpg";
+import project1 from "../assets/projects/project1.webp";
+import project2 from "../assets/projects/project2.webp";
+import project3 from "../assets/projects/project3.webp";
+import project4 from "../assets/projects/project4.webp";
+import project5 from "../assets/projects/project5.webp";
 
 import development from "../assets/services/development.png";
 import webDesign from "../assets/services/webDesign.png";
@@ -11,8 +12,8 @@ export const projects = [
      {
           title: 'KBK Website',
           description: 'This website is created for the company KBK, that operates in the instalations market in Romania, Germany and the Republic of Moldova.',
-          id:6,
-          image: project1,
+          id:5,
+          image: project5,
           url: 'https://lxquids.github.io/kbk/'
      },
      {
