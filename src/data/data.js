@@ -9,6 +9,13 @@ import contentWriting from "../assets/services/contentWriting.png";
 
 export const projects = [
      {
+          title: 'KBK Website',
+          description: 'This website is created for the company KBK, that operates in the instalations market in Romania, Germany and the Republic of Moldova.',
+          id:6,
+          image: project1,
+          url: 'https://lxquids.github.io/kbk/'
+     },
+     {
           title: 'Website for Euromobila',
           description: 'This website was created for our friends at Euromobila. They wanted a clean, modern website, so that their clients could easily find their products.',
           id:1,

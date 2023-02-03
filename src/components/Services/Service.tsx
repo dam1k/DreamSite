@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import {BsArrowRightCircle} from "react-icons/bs";
 import Icons from "../../icons/icons";
 import "./Service.scss";
-import { services } from "../../data/data";
 
 const Service = ({service, dropdown, navigate}:any) => {
   const serviceRef = useRef<HTMLInputElement>(null);
