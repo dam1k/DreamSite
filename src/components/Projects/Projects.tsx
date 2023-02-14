@@ -1,8 +1,8 @@
-
 // import { projects } from '../../data/data';
 import { Link } from 'react-router-dom';
 import {useState} from "react";
 import './Projects.scss';
+import {motion, AnimatePresence} from "framer-motion"
 
 import { projects } from '../../data/data';
 
@@ -16,10 +16,9 @@ const Projects = () => {
       <div className="projects-grid">
          {projects.slice(0, 3).map(project => {
           return <div key={project.id} className={`project-img img${project.id}`}>
-              <a href={project.url}  target="_blank"><img src={project.image} alt={`project-${project.title}`}/></a>
+              <a href={project.url} target="_blank"><img src={project.image} alt={`project-${project.title}`}/></a>
             </div> 
          })}
-
       </div>
     </div>
     </div>

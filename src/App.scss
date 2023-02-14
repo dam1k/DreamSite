@@ -10,7 +10,9 @@ $black: #0A0A0A;
 
 html, body, #root {
      height: 100%;
+     // overflow-x:hidden;
    }
+
 
 html {
 scroll-behavior: smooth;
@@ -60,7 +62,7 @@ body {
 }
 
 .blueBgColor {
-     background-color: $blue;
+background-color: $darkblue;
 }
 
 .darkBgColor {

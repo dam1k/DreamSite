@@ -12,35 +12,35 @@ export const projects = [
      {
           title: 'KBK Website',
           description: 'This website is created for the company KBK, that operates in the instalations market in Romania, Germany and the Republic of Moldova.',
-          id:5,
+          id:1,
           image: project5,
           url: 'https://lxquids.github.io/kbk/'
      },
      {
           title: 'Website for Euromobila',
           description: 'This website was created for our friends at Euromobila. They wanted a clean, modern website, so that their clients could easily find their products.',
-          id:1,
+          id:2,
           image: project1,
-          url: 'https://euromobila.vercel.app'
+          url: 'https://euromobila.md'
      },
      {
           title: 'House Marketplace',
           description: 'This is a house marketplace website, where people can post their houses for sale or rent. It includes authentication, a personal profile where you can manage your listings and many features.',
-          id:2,
+          id:3,
           image: project3,
           url:'https://houses-for-sale.vercel.app',
      }, 
      {
           title: 'Photography Portfolio',
           description: 'This is a photography portfolio. The client wanted a simple website to showcase his work and make it it easier for clients to contact him.',
-          id:3,
+          id:4,
           image: project4,
           url: 'https://daniel-s-website.vercel.app'
      },
      {
           title: 'Portfolio Website',
           description: 'This is the personal portfolio of one of our team members.',
-          id:4,
+          id:5,
           image: project2,
           url: 'https://damianwebdev.vercel.app'
      }

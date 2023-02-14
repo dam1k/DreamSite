@@ -49,12 +49,12 @@ transform: translateY(25%);
 
 @keyframes heroHeading {
      from {transform:translateY(-20px); opacity:0;}
-     to {from {transform:translateY(0); opacity:1;}}
+     to  {transform:translateY(0); opacity:1;}
 }
 
 .hero-title {
 animation-name:heroHeading;
-animation-duration:0.75s;
+animation-duration:2s;
 }
 
 @media only screen and (max-width:1035px) {
@@ -111,5 +111,27 @@ animation-duration:0.75s;
      }
 }
 
+
+.hero-right-text {
+     animation-name: heroRightText;
+     animation-timing-function: ease-in-out;
+     animation-duration: 0.75s;
+}
+
+@keyframes heroRightText {
+     from {transform:translateX(100%); opacity:0;}
+     to {transform:translateX(0); opacity:1;}
+}
+
+.hero-left-text {
+     animation-name: heroLeftText;
+     animation-timing-function: ease-in-out;
+     animation-duration: 0.75s;
+}
+
+@keyframes heroLeftText {
+     from {transform:translateX(-100%); opacity:0;}
+     to {transform:translateX(0); opacity:1;}
+}
 
 
