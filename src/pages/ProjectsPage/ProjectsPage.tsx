@@ -1,10 +1,20 @@
 import "./ProjectsPage.scss";
 import { projects } from "../../data/data";
 import Contact from "../../components/Contact/Contact";
+import AnimatedPage from "../../components/AnimatedPage";
+import { useEffect } from "react";
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    document.body.style.overflowX = "hidden";
+    setTimeout(() => {
+      document.body.style.overflowX = "auto";
+    }, 1000)
+  }, [])
+  
   const pageTitle = 'These are our projects.';
   return (
+    <AnimatedPage>
     <div className="projects-page">
      <h1 className="page-title darkColor lightBgColor m2t">{pageTitle}</h1>
      <div className="projects-list darkBgColor">
@@ -19,13 +29,12 @@ const ProjectsPage = () => {
           </div>
           </a>)
           })}
-
-
         </div>
       </div>
       <Contact showImg={true}/>
      </div>
      </div>
+     </AnimatedPage>
   )
 }
 

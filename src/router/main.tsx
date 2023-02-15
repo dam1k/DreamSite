@@ -1,7 +1,7 @@
 import {Routes, Route, useLocation} from "react-router-dom"
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-
+import {useEffect} from "react";
 import Home from "../pages/Home/Home";
 import ProjectsPage from "../pages/ProjectsPage/ProjectsPage";
 import About from "../pages/About/About";
@@ -11,6 +11,12 @@ import NotFound from "../pages/NotFound/NotFound";
 
 const Router = () => {
      const {pathname} = useLocation();
+     useEffect(() => {
+          document.body.style.overflowX = "hidden";
+          setTimeout(() => {
+            document.body.style.overflowX = "auto";
+          }, 1000)
+        }, [])
      return (
           <>
           <Navbar/>

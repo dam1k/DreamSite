@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 import MessageIcon from "../../assets/MessageIcon.svg";
 import Logo from "../Logo/Logo";
+import LightBlueRounded from "../lightBlueRounded";
+import {useEffect} from "react";
 
 const Footer = () => {
      const footerText = {
@@ -12,6 +14,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
+     {/* <LightBlueRounded/> */}
      <div className="container">
           <div className="footer-flex">
                <div className="work m3b">
@@ -27,7 +30,7 @@ const Footer = () => {
                     <Logo/>
 
       <div className="links">
-        <NavLink to="/about">About Us</NavLink>
+      <NavLink to="/about">About Us</NavLink>
         <NavLink to="/services">Services</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact Us</NavLink>

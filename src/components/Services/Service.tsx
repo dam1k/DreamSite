@@ -44,7 +44,6 @@ if(!dropdown) {
      </div>
 
      {dropdown ? <button className={`arrow-btn ${isOpen ? "rotate-btn" : ''}`}
-      // onClick={() => setIsOpen(prev => !prev)}
       >
         <BsArrowRightCircle color="#CFF5E7"/>
         </button> : ''}

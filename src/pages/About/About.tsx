@@ -3,10 +3,19 @@ import {AiFillInstagram} from "react-icons/ai"
 import {AiFillFacebook} from "react-icons/ai"
 import {MdEmail} from "react-icons/md"
 import { socialData } from "../../data/data";
+import AnimatedPage from "../../components/AnimatedPage";
+import {useEffect} from "react"
 
 const About = () => {
+  useEffect(() => {
+    document.body.style.overflowX = "hidden";
+    setTimeout(() => {
+      document.body.style.overflowX = "auto";
+    }, 1000)
+  }, [])
   const pageText = 'We are a team of talented, hard working individuals. Our purpose is to help you achieve the success you deserve by bringing your business to the online world.'
   return (
+    <AnimatedPage>
     <div className="about">
       <div className="container">
       <h1 className="about-title page-title darkColor">About Us.</h1>
@@ -51,6 +60,7 @@ const About = () => {
         <h3>Barbuta Felix</h3>
       </div>
       </div>
+      </AnimatedPage>
   )
 }
 

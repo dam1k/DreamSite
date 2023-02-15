@@ -3,11 +3,13 @@ import Service from "../../components/Services/Service";
 import "./ServicesPage.scss";
 import { services } from "../../data/data";
 import Contact from "../../components/Contact/Contact";
+import AnimatedPage from "../../components/AnimatedPage";
 
 const ServicesPage = () => {
 
   const pageTitle = 'These are our services.';
   return (
+    <AnimatedPage>
     <div className="services-page">
       <h1 className="page-title darkColor lightBgColor m2t">{pageTitle}</h1>
       <div className="services darkBgColor">
@@ -23,9 +25,10 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
-      <Contact showImg={true}/>
     </div>
+    <Contact showImg={true}/>
     </div>
+    </AnimatedPage>
   )
 }
 
