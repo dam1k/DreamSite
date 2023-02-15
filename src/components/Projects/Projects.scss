@@ -27,6 +27,7 @@ font-size:6rem;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: 1fr 1fr;
      grid-gap:10px;
+     transition: opacity 0.5s ease-in-out;
 
      img {
           width:100%;
@@ -63,6 +64,8 @@ font-size:6rem;
 
      .project-img {
           position:relative;
+          cursor:pointer;
+          transition:all 0.3s ease-in-out;
      }
 
      .project-img::before {
@@ -74,12 +77,13 @@ font-size:6rem;
           left:0;
           opacity:50%;
           border-radius: 60px;
+          transition:all 0.3s ease-in-out;
      }
 
      .img1::before {
           bottom:-3%;
           left:-3%;
-          background-color: #1C3144 !important;
+          background-color: #1C3144;
           z-index:-1;
      }
 
@@ -87,14 +91,14 @@ font-size:6rem;
           left:-4%;
           bottom:-3%;
           z-index:-1;
-          background-color: #1C3144 !important;
+          background-color: #1C3144;
      }
 
      .img3::before {
           left:4%;
           bottom:-3%;
           z-index:-1;
-          background-color: #1C3144 !important;
+          background-color: #1C3144;
      }
 
      .img1:hover img, .img2:hover img {
@@ -106,6 +110,11 @@ font-size:6rem;
      }
 }
 
+.project-img:hover::before {
+     background-color: rgba(28, 49, 68, 0.7) !important;  
+  }
+
+  
 @media only screen and (max-width: 800px) {
 .projects h1 {
 font-size:2.5rem;
@@ -153,3 +162,13 @@ text-align: center;
           padding-bottom:3rem !important;
      } 
 }
+
+.projects-visible {
+     opacity:1;
+     transform:translateX(0);
+     }
+     
+     .projects-hidden {
+          opacity:0;
+          transform:translateX(-100px);
+          }

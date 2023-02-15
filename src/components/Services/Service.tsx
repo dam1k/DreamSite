@@ -28,22 +28,15 @@ useEffect(() => {
 if(!dropdown) {
   setIsOpen(true);
 }
-}, [])
+}, []);
 
-// useEffect(() => {
-//   const loadImage = (image:any) => {
-//     return new Promise((resolve, reject) => {
-//       const loadImg = new Image()
-//       loadImg.src = image;
-//       loadImg.onerror = err => reject(err)
-//     })
-//  }
-//    loadImage(service.image).then(() => setImgLoaded(true))
-// }, [])
 
   return (
     <div ref={serviceRef} className={`service lightBtBorder 
-    ${isVisible ? 'service-visible' : 'hidden'}`}>
+    ${isVisible ? 'service-visible' : 'hidden'}`
+    }
+    onClick={() => setIsOpen(prev => !prev)}
+    >
       <div className="service-row">
      <div className={`service-heading m1t ${isOpen ? "lightColor" : ''}`}>
      <span className="service-id">0{service.id}</span>
@@ -51,16 +44,18 @@ if(!dropdown) {
      </div>
 
      {dropdown ? <button className={`arrow-btn ${isOpen ? "rotate-btn" : ''}`}
-      onClick={() => setIsOpen(prev => !prev)}>
+      // onClick={() => setIsOpen(prev => !prev)}
+      >
         <BsArrowRightCircle color="#CFF5E7"/>
         </button> : ''}
         </div>
 
         <AnimatePresence>
         {isOpen && <motion.div
-        initial={{opacity:0, y:'-20px'}}
+        onClick={() => setIsOpen(prev => !prev)}
+        initial={{opacity:0, y:'20px'}}
         animate={{opacity:1, y:0}}
-        exit={{opacity:0, y: '-20px'}}
+        exit={{opacity:0, y: '20px'}}
         transition={{duration:0.75}}
          className='service-img'>
 
@@ -68,7 +63,6 @@ if(!dropdown) {
           if(navigate) navigateTo("/services")
           }} 
           src={service.image} loading="lazy" alt={`service-${service.text}`}/>
-
         </motion.div>}
         </AnimatePresence>
         {!dropdown && <p className="service-desc lightColor">{service.description}</p>}
